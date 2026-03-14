@@ -11,11 +11,11 @@ const Skills = () => {
     const skillsRef = useRef(null);
 
     const flowingItems = [
-        { link: '#', text: 'React.js', image: 'https://picsum.photos/600/400?random=1' },
-        { link: '#', text: 'Node.js', image: 'https://picsum.photos/600/400?random=2' },
-        { link: '#', text: 'TailwindCSS', image: 'https://picsum.photos/600/400?random=3' },
-        { link: '#', text: 'MongoDB', image: 'https://picsum.photos/600/400?random=4' },
-        { link: '#', text: 'Next.js', image: 'https://picsum.photos/600/400?random=5' },
+        { link: 'https://react.dev/learn', target: "_blank", text: 'React.js', image: 'https://picsum.photos/600/400?random=1' },
+        { link: 'https://nodejs.org/en/learn/getting-started/introduction-to-nodejs', target: "_blank", text: 'Node.js', image: 'https://picsum.photos/600/400?random=2' },
+        { link: 'https://tailwindcss.com/docs', target: "_blank", text: 'TailwindCSS', image: 'https://picsum.photos/600/400?random=3' },
+        { link: 'https://www.mongodb.com/docs', target: "_blank", text: 'MongoDB', image: 'https://picsum.photos/600/400?random=4' },
+        { link: 'https://nextjs.org/learn', target: "_blank", text: 'Next.js', image: 'https://picsum.photos/600/400?random=5' },
     ];
 
     const skills = [
