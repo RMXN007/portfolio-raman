@@ -21,8 +21,8 @@ const projectsData = [
         description: "A full stack application where users can create, update and delete tasks with real-time sync.",
         image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80",
         techStack: ["React", "Node", "MongoDB", "Express"],
-        liveUrl: "#",
-        githubUrl: "#"
+        liveUrl: "https://gamevault-pink-three.vercel.app/",
+        githubUrl: "https://github.com/RMXN007/gamevault"
     },
     {
         id: 3,
@@ -66,7 +66,7 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projectsData.map((project, idx) => (
                     <div key={idx} className="project-card-wrapper">
-                        <ProjectCard 
+                        <ProjectCard
                             title={project.title}
                             description={project.description}
                             techStack={project.techStack}
