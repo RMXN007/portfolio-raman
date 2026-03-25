@@ -31,20 +31,20 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
 
                 <div className="flex flex-wrap items-center gap-3 mt-auto pt-5 border-t border-zinc-800/50">
                     {liveUrl && (
-                        <a 
-                            href={liveUrl} 
-                            target="_blank" 
-                            rel="noreferrer" 
+                        <a
+                            href={liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
                             className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-cyan-500/10 text-cyan-400 rounded-lg hover:bg-cyan-500 hover:text-slate-950 transition-all shadow-lg shadow-cyan-500/5 border border-cyan-500/30 hover:border-cyan-500"
                         >
                             <ExternalLink size={16} /> Visit Live Site
                         </a>
                     )}
                     {githubUrl && (
-                        <a 
-                            href={githubUrl} 
-                            target="_blank" 
-                            rel="noreferrer" 
+                        <a
+                            href={githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
                             className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-zinc-800/40 text-slate-300 rounded-lg hover:bg-zinc-700 hover:text-white transition-all border border-zinc-700/50 hover:border-zinc-600"
                         >
                             <Github size={16} /> Source
