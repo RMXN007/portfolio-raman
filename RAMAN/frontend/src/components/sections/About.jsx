@@ -29,7 +29,7 @@ const About = () => {
 
     return (
         <section id="about" ref={aboutRef} className="py-24 px-4 max-w-6xl mx-auto">
-            <h2 className="about-element text-3xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+            <h2 className="about-element text-4xl md:text-5xl font-serif font-bold mb-16 flex items-center gap-4">
                 <span className="w-12 h-1 bg-cyan-500 rounded-full block"></span>
                 System Profile
             </h2>
@@ -51,14 +51,13 @@ const About = () => {
                         <div className="space-y-6">
                             <p className="text-xl leading-relaxed text-slate-100 font-medium">
                                 I am an <span className="text-cyan-400">Information Technology</span> student at 
-                                <span className="text-orange-400 font-bold underline decoration-orange-400/30 underline-offset-4 decoration-2"> IET DAVV Indore</span>.
+                                <span className="text-orange-400 font-bold ml-1">IET DAVV Indore</span>.
                             </p>
                             <p className="text-lg leading-relaxed text-slate-300">
-                                I specialize in building highly interactive, performant full-stack web applications. 
-                                My approach combines <span className="text-orange-300">mathematical logic</span> with <span className="text-cyan-300">cutting-edge frontend art</span>.
+                                I engineer scalable backends and craft highly interactive frontends. My focus lies in architecting performant systems using the MERN stack and Next.js, treating every application as a mission-critical product.
                             </p>
                             <p className="text-lg leading-relaxed text-zinc-400 italic border-l-2 border-orange-500/50 pl-6">
-                                "Passionate about writing clean, maintainable code and building products that provide great user experiences."
+                                "Diligence in mathematical logic meets precision in frontend design. I write robust, modular code that scales."
                             </p>
                         </div>
                     </Card>

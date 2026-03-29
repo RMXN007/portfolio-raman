@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectCard from '../components/projects/ProjectCard';
 
+import portfolioImg from '../assets/images/portfolio.png';
+import gamevaultImg from '../assets/images/GameVault.png';
+
 const projectsList = [
     {
         id: 1,
@@ -9,16 +12,16 @@ const projectsList = [
         techStack: ['React', 'Vite', 'Tailwind CSS', 'GSAP'],
         liveUrl: 'https://portfolio-raman-brown.vercel.app/',
         githubUrl: 'https://github.com/RMXN007/portfolio-raman',
-        image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800'
+        image: portfolioImg
     },
     {
         id: 2,
-        title: "Task Manager App",
+        title: "GameVault",
         description: "A full stack application where users can create, update and delete tasks with real-time sync.",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80",
+        image: gamevaultImg,
         techStack: ["React", "Node", "MongoDB", "Express"],
-        liveUrl: "#",
-        githubUrl: "#"
+        liveUrl: "https://gamevault-pink-three.vercel.app/",
+        githubUrl: "https://github.com/RMXN007/gamevault"
     },
     {
         id: 3,
@@ -45,12 +48,12 @@ const Projects = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projectsList.map((project, idx) => (
-                    <div 
-                        key={project.id} 
-                        className="animate-fade-up-text" 
+                    <div
+                        key={project.id}
+                        className="animate-fade-up-text"
                         style={{ animationDelay: `${idx * 0.15}s`, opacity: 0, animationFillMode: 'forwards' }}
                     >
-                        <ProjectCard 
+                        <ProjectCard
                             title={project.title}
                             description={project.description}
                             techStack={project.techStack}

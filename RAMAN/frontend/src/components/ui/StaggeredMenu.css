@@ -250,7 +250,7 @@
 
 .sm-panel-item:hover {
   color: var(--sm-accent, #06b6d4);
-  transform: scale(1.05); /* Slight pop effect */
+  transform: translateY(-8px); /* Upward movement */
 }
 
 .sm-panel-list[data-numbering] {

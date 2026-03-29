@@ -33,19 +33,19 @@ const Hero = () => {
                 <img src={ramanPhoto} alt="Raman Pawar" className="w-full h-full object-cover" />
             </div>
 
-            <div className="hero-element inline-block mb-4 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium tracking-wide">
-                Full Stack Developer | MERN Stack
+            <div className="hero-element inline-block mb-6 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold tracking-[0.2em] uppercase">
+                Welcome to the Future
             </div>
 
-            <h1 className="hero-element text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">
-                Hi, I'm <span className="neon-text">Raman Pawar</span>
+            <h1 className="hero-element text-6xl md:text-8xl font-serif font-bold mb-6">
+                The Architect
             </h1>
 
-            <p className="hero-element text-xl text-slate-600 dark:text-zinc-400 max-w-2xl mb-10">
-                I build modern web applications using React, Node.js and MongoDB.
+            <p className="hero-element text-xl md:text-2xl text-slate-600 dark:text-zinc-300 max-w-2xl mb-10 font-sans font-light leading-relaxed">
+                Engineering elegant, mission-critical systems for the modern web with React, Node.js, and MongoDB.
             </p>
 
-            <div className="hero-element flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="hero-element flex flex-col sm:flex-row gap-5 mb-10">
                 <button onClick={() => handleScroll('projects')} className="flex items-center justify-center gap-2 text-lg px-8 py-3 rounded-xl bg-cyan-500 text-white dark:text-zinc-950 font-semibold hover:bg-cyan-400 hover:scale-105 transition-all shadow-[0_0_15px_rgba(6,182,212,0.4)]">
                     <Code2 size={20} /> View Projects
                 </button>

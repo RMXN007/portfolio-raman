@@ -3,6 +3,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectCard from '../projects/ProjectCard';
 
+import portfolioImg from '../../assets/images/portfolio.png';
+import gamevaultImg from '../../assets/images/GameVault.png';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const projectsData = [
@@ -13,13 +16,13 @@ const projectsData = [
         techStack: ['React', 'Vite', 'Tailwind CSS', 'GSAP'],
         liveUrl: 'https://portfolio-raman-brown.vercel.app/',
         githubUrl: 'https://github.com/RMXN007/portfolio-raman',
-        image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800'
+        image: portfolioImg
     },
     {
         id: 2,
-        title: "Task Manager App",
+        title: "GameVault",
         description: "A full stack application where users can create, update and delete tasks with real-time sync.",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80",
+        image: gamevaultImg,
         techStack: ["React", "Node", "MongoDB", "Express"],
         liveUrl: "https://gamevault-pink-three.vercel.app/",
         githubUrl: "https://github.com/RMXN007/gamevault"
@@ -58,7 +61,7 @@ const Projects = () => {
 
     return (
         <section id="projects" ref={projectsRef} className="py-24 px-4 max-w-6xl mx-auto w-full">
-            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-16 flex items-center gap-4">
                 <span className="w-12 h-1 bg-cyan-500 rounded-full block"></span>
                 Featured Projects
             </h2>
