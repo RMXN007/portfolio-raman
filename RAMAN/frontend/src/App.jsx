@@ -6,7 +6,7 @@ import Footer from './components/layout/Footer';
 import AppRoutes from './routes/AppRoutes';
 import LoadingScreen from './components/ui/LoadingScreen';
 import './index.css';
-import Starfield from './components/backgrounds/StarField.jsx';
+import Starfield from './components/backgrounds/Starfield.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
