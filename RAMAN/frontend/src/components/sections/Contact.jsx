@@ -69,7 +69,7 @@ const Contact = () => {
                     </a>
                 </div>
 
-                {/* Contact Form */}
+                {/* Contact Form
                 <form className="bg-white/40 dark:bg-zinc-900/40 p-8 rounded-2xl border border-slate-200 dark:border-zinc-800/50 backdrop-blur-sm contact-element shadow-sm dark:shadow-none">
                     <div className="mb-6">
                         <label htmlFor="name" className="block text-sm font-medium text-slate-600 dark:text-zinc-400 mb-2">Name</label>
@@ -108,7 +108,7 @@ const Contact = () => {
                     >
                         Send Message <Send size={18} />
                     </button>
-                </form>
+                </form> */}
             </div>
         </section>
     );

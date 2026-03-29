@@ -16,6 +16,9 @@
   --color-dark-bg: #09090b;
   --color-card-bg: rgba(24, 24, 27, 0.6);
   --color-border: rgba(39, 39, 42, 0.8);
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
 }
 
 @layer base {

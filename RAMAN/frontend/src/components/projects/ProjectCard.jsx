@@ -4,19 +4,19 @@ import Card from '../ui/Card';
 
 const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl }) => {
     return (
-        <Card className="flex flex-col h-full group overflow-hidden">
+        <Card className="flex flex-col h-full group overflow-hidden hover:-translate-y-2 hover:shadow-[0_8px_30px_rgba(6,182,212,0.15)] transition-all duration-300 border border-slate-200/50 dark:border-zinc-800/80 hover:border-cyan-500/30">
             {image && (
                 <div className="h-48 lg:h-56 overflow-hidden relative">
                     <div className="absolute inset-0 bg-cyan-500/20 mix-blend-overlay group-hover:opacity-0 transition-opacity z-10 w-full h-full pointer-events-none"></div>
                     <img
                         src={image}
                         alt={title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                 </div>
             )}
             <div className="p-6 flex flex-col flex-grow relative z-20">
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors text-slate-100">{title}</h3>
+                <h3 className="text-2xl font-serif font-bold mb-3 group-hover:text-cyan-400 transition-colors text-slate-100">{title}</h3>
                 <p className="text-zinc-400 mb-6 flex-grow leading-relaxed">{description}</p>
 
                 {techStack && techStack.length > 0 && (

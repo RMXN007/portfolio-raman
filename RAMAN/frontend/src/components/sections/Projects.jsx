@@ -61,7 +61,7 @@ const Projects = () => {
 
     return (
         <section id="projects" ref={projectsRef} className="py-24 px-4 max-w-6xl mx-auto w-full">
-            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-16 flex items-center gap-4">
                 <span className="w-12 h-1 bg-cyan-500 rounded-full block"></span>
                 Featured Projects
             </h2>
