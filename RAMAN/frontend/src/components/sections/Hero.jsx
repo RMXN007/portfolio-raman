@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight, Code2, Github, Linkedin } from 'lucide-react';
 import gsap from 'gsap';
-import ramanPhoto from '../../assets/Raman photo.jpg';
+import ramanPhoto from '../../assets/Hollow Knight.png';
 
 const Hero = () => {
     const heroRef = useRef(null);
