@@ -46,14 +46,14 @@ const TicTacToe = () => {
     const renderSquare = (index) => {
         const isWinningSquare = winnerInfo?.line?.includes(index);
         const value = board[index];
-        const colorClass = value === 'X' ? 'text-cyan-400' : 'text-blue-500';
+        const colorClass = value === 'X' ? 'text-cyan-600 dark:text-cyan-400' : 'text-blue-600 dark:text-blue-400';
 
         return (
             <button
                 onClick={() => handleClick(index)}
-                className={`h-24 sm:h-32 w-full bg-zinc-900/50 border border-zinc-700/50 rounded-lg text-4xl sm:text-5xl font-bold flex items-center justify-center transition-all duration-300
-          ${!value && !winnerInfo ? 'hover:bg-zinc-800/80 hover:border-cyan-500/30' : ''}
-          ${isWinningSquare ? 'bg-cyan-500/20 shadow-[0_0_15px_rgba(6,182,212,0.5)] border-cyan-400 scale-105 z-10' : ''}
+                                className={`h-24 sm:h-32 w-full bg-white/80 dark:bg-zinc-900/50 border border-slate-200/80 dark:border-zinc-700/50 rounded-lg text-4xl sm:text-5xl font-bold flex items-center justify-center transition-all duration-300
+                    ${!value && !winnerInfo ? 'hover:bg-slate-100 hover:border-cyan-500/30 dark:hover:bg-zinc-800/80' : ''}
+                    ${isWinningSquare ? 'bg-cyan-500/20 shadow-[0_0_15px_rgba(6,182,212,0.35)] border-cyan-400 scale-105 z-10' : ''}
         `}
                 disabled={!!winnerInfo}
             >
@@ -66,14 +66,14 @@ const TicTacToe = () => {
         <div className="py-20 px-4 md:px-8 max-w-4xl mx-auto w-full flex flex-col items-center animate-fade-in">
             <div className="text-center mb-10 w-full flex flex-col md:flex-row justify-between items-center gap-6">
                 <div>
-                    <h1 className="text-4xl font-extrabold mb-2">Tic Tac Toe</h1>
-                    <p className="text-zinc-400">Can you beat the clock?</p>
+                    <h1 className="text-4xl font-extrabold mb-2 text-text-primary">Tic Tac Toe</h1>
+                    <p className="text-text-secondary">Can you beat the clock?</p>
                 </div>
 
                 <div className="flex gap-4">
                     <Card className="px-5 py-3 flex items-center gap-3">
-                        <Clock size={20} className="text-cyan-400" />
-                        <span className="text-xl font-mono text-slate-100">{formattedTime}</span>
+                        <Clock size={20} className="text-cyan-500 dark:text-cyan-400" />
+                        <span className="text-xl font-mono text-text-primary">{formattedTime}</span>
                     </Card>
                 </div>
             </div>
@@ -83,15 +83,15 @@ const TicTacToe = () => {
                     <div className="text-lg font-medium">
                         {winnerInfo ? (
                             winnerInfo.winner === 'Draw' ? (
-                                <span className="text-yellow-400">It's a Draw!</span>
+                                <span className="text-yellow-500 dark:text-yellow-400">It's a Draw!</span>
                             ) : (
-                                <span className="flex items-center gap-2 text-cyan-400">
+                                <span className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400">
                                     <Trophy size={20} /> Winner: {winnerInfo.winner}
                                 </span>
                             )
                         ) : (
-                            <span className="text-zinc-300">
-                                Next Player: <span className={isXNext ? 'text-cyan-400 font-bold' : 'text-blue-400 font-bold'}>{isXNext ? 'X' : 'O'}</span>
+                            <span className="text-text-secondary">
+                                Next Player: <span className={isXNext ? 'text-cyan-600 dark:text-cyan-400 font-bold' : 'text-blue-600 dark:text-blue-400 font-bold'}>{isXNext ? 'X' : 'O'}</span>
                             </span>
                         )}
                     </div>
@@ -101,7 +101,7 @@ const TicTacToe = () => {
                     </Button>
                 </div>
 
-                <div className="grid grid-cols-3 gap-3 p-4 bg-zinc-950/50 border border-zinc-800/50 rounded-2xl backdrop-blur-md shadow-2xl">
+                <div className="grid grid-cols-3 gap-3 p-4 bg-white/80 dark:bg-zinc-950/50 border border-slate-200/80 dark:border-zinc-800/50 rounded-2xl backdrop-blur-md shadow-2xl">
                     {board.map((_, index) => (
                         <React.Fragment key={index}>
                             {renderSquare(index)}

@@ -45,21 +45,21 @@ const Skills = () => {
 
     return (
         <section id="skills" ref={skillsRef} className="py-24 px-4 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center justify-center gap-4 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center justify-center gap-4 text-center text-text-primary">
                 Skills & Technologies
             </h2>
 
             <div className="skill-element mb-16">
-                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
+                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2 text-text-primary">
                     <span className="text-cyan-400">&gt;</span> Technical Flow
                 </h2>
-                <div className="w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800/50">
+                <div className="w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-200/90 dark:border-zinc-800/50 shadow-sm">
                     <FlowingMenu items={flowingItems} />
                 </div>
             </div>
 
             <div className="skill-element">
-                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
+                <h2 className="text-2xl font-bold mb-8 flex items-center gap-2 text-text-primary">
                     <span className="text-cyan-400">&gt;</span> Technical Arsenal
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -67,11 +67,11 @@ const Skills = () => {
                         <Card key={index} className="p-6">
                             <div className="flex items-center gap-3 mb-4 text-cyan-500 dark:text-cyan-400">
                                 {skill.icon}
-                                <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">{skill.category}</h3>
+                                <h3 className="text-xl font-bold text-text-primary">{skill.category}</h3>
                             </div>
                             <ul className="space-y-2">
                                 {skill.items.map((item, i) => (
-                                    <li key={i} className="text-slate-600 dark:text-zinc-400 flex items-center gap-2 text-sm">
+                                    <li key={i} className="text-text-secondary flex items-center gap-2 text-sm">
                                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-500/50 block"></span>
                                         {item}
                                     </li>

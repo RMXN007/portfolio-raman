@@ -37,11 +37,11 @@ const Hero = () => {
                 Welcome to the Future
             </div>
 
-            <h1 className="hero-element text-6xl md:text-8xl font-serif font-bold mb-6">
+            <h1 className="hero-element text-6xl md:text-8xl font-serif font-bold mb-6 text-text-primary">
                 The Architect
             </h1>
 
-            <p className="hero-element text-xl md:text-2xl text-slate-600 dark:text-zinc-300 max-w-2xl mb-10 font-sans font-light leading-relaxed">
+            <p className="hero-element text-xl md:text-2xl text-text-secondary max-w-2xl mb-10 font-sans font-light leading-relaxed">
                 Engineering elegant, mission-critical systems for the modern web with React, Node.js, and MongoDB.
             </p>
 
@@ -49,17 +49,17 @@ const Hero = () => {
                 <button onClick={() => handleScroll('projects')} className="flex items-center justify-center gap-2 text-lg px-8 py-3 rounded-xl bg-cyan-500 text-white dark:text-zinc-950 font-semibold hover:bg-cyan-400 hover:scale-105 transition-all shadow-[0_0_15px_rgba(6,182,212,0.4)]">
                     <Code2 size={20} /> View Projects
                 </button>
-                <button onClick={() => handleScroll('contact')} className="flex items-center justify-center gap-2 text-lg px-8 py-3 rounded-xl border border-slate-300 dark:border-zinc-700 bg-slate-200 dark:bg-zinc-800/50 hover:bg-slate-300 dark:hover:bg-zinc-800 hover:border-cyan-500/50 hover:text-cyan-500 dark:hover:text-cyan-400 hover:scale-105 transition-all">
+                <button onClick={() => handleScroll('contact')} className="flex items-center justify-center gap-2 text-lg px-8 py-3 rounded-xl border border-slate-300 bg-white/80 text-slate-700 hover:bg-slate-100 hover:border-cyan-500/50 hover:text-cyan-700 dark:border-zinc-700 dark:bg-zinc-800/50 dark:text-slate-200 dark:hover:bg-zinc-800 dark:hover:text-cyan-400 hover:scale-105 transition-all shadow-sm">
                     Contact Me <ArrowRight size={20} />
                 </button>
             </div>
 
             <div className="hero-element flex items-center gap-6">
-                <a href="https://github.com/RMXN007" target="_blank" rel="noreferrer" className="text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-gray-100 transition-colors">
+                <a href="https://github.com/RMXN007" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-gray-100 transition-colors">
                     <Github size={28} />
                     <span className="sr-only">GitHub</span>
                 </a>
-                <a href="https://linkedin.com/in/raman-pawar-824483377" target="_blank" rel="noreferrer" className="text-slate-600 dark:text-zinc-400 hover:text-blue-500 transition-colors">
+                <a href="https://linkedin.com/in/raman-pawar-824483377" target="_blank" rel="noreferrer" className="text-slate-600 hover:text-blue-500 dark:text-zinc-400 transition-colors">
                     <Linkedin size={28} />
                     <span className="sr-only">LinkedIn</span>
                 </a>

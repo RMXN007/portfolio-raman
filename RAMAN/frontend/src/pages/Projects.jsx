@@ -25,12 +25,12 @@ const projectsList = [
     },
     {
         id: 3,
-        title: "E-Commerce Dashboard",
-        description: "An admin dashboard for managing products, viewing sales metrics, and handling customer orders.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        title: "IET DAVV RESULT PORTAL",
+        description: "A web application for managing and displaying academic results for students of IET DAVV.",
+        image: "https://ietresult.vercel.app/",
         techStack: ["React", "TailwindCSS", "Recharts"],
-        liveUrl: "#",
-        githubUrl: "#"
+        liveUrl: "https://ietresult.vercel.app/",
+        githubUrl: "https://github.com/RMXN007/ietresult"
     }
 ];
 
@@ -38,10 +38,10 @@ const Projects = () => {
     return (
         <div className="py-24 px-4 md:px-8 max-w-7xl mx-auto w-full animate-fade-in mt-16">
             <div className="mb-16 text-center max-w-3xl mx-auto">
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-text-primary">
                     Featured <span className="neon-text">Projects</span>
                 </h1>
-                <p className="text-zinc-400 text-lg leading-relaxed">
+                <p className="text-text-secondary text-lg leading-relaxed">
                     A showcase of systems, applications, and architectures I've engineered. Dive into my latest works below.
                 </p>
             </div>

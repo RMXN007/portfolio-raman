@@ -37,11 +37,11 @@ const Freelance = () => {
                         <Zap size={32} />
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-text-primary">
                         Available for Freelance Work
                     </h2>
 
-                    <p className="text-lg text-slate-600 dark:text-zinc-400 max-w-2xl mx-auto mb-8">
+                    <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
                         I am currently open to freelance projects involving full stack web development and backend APIs. Got an idea? Let's build it.
                     </p>
 

@@ -44,7 +44,7 @@ const Navbar = () => {
                     
                     <button
                         onClick={toggleTheme}
-                        className="p-2 rounded-full border border-gray-600/50 hover:bg-gray-800/30 transition-all text-gray-200 dark:text-gray-300 shadow-sm backdrop-blur-sm cursor-pointer z-[60]"
+                        className="p-2 rounded-full border border-slate-300/80 bg-white/70 text-slate-700 hover:bg-white hover:border-cyan-400/50 transition-all dark:border-gray-600/50 dark:bg-gray-950/30 dark:text-gray-300 dark:hover:bg-gray-800/30 shadow-sm backdrop-blur-sm cursor-pointer z-[60]"
                         aria-label="Toggle Navigation Theme"
                     >
                         {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
@@ -58,9 +58,9 @@ const Navbar = () => {
                 socialItems={socialItems}
                 displaySocials={true}
                 displayItemNumbering={true}
-                menuButtonColor="#fff"
-                openMenuButtonColor="#fff"
-                colors={['#080808', '#121212']}
+                menuButtonColor={theme === 'dark' ? '#fff' : '#0f172a'}
+                openMenuButtonColor={theme === 'dark' ? '#fff' : '#0f172a'}
+                colors={theme === 'dark' ? ['#080808', '#121212'] : ['#f8fafc', '#e2e8f0']}
                 accentColor="#06b6d4"
                 handleScroll={handleScroll}
             />

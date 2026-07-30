@@ -16,8 +16,8 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
                 </div>
             )}
             <div className="p-6 flex flex-col flex-grow relative z-20">
-                <h3 className="text-2xl font-serif font-bold mb-3 group-hover:text-cyan-400 transition-colors text-slate-100">{title}</h3>
-                <p className="text-zinc-400 mb-6 flex-grow leading-relaxed">{description}</p>
+                <h3 className="text-2xl font-serif font-bold mb-3 group-hover:text-cyan-500 transition-colors text-text-primary">{title}</h3>
+                <p className="text-text-secondary mb-6 flex-grow leading-relaxed">{description}</p>
 
                 {techStack && techStack.length > 0 && (
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -29,13 +29,13 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
                     </div>
                 )}
 
-                <div className="flex flex-wrap items-center gap-3 mt-auto pt-5 border-t border-zinc-800/50">
+                <div className="flex flex-wrap items-center gap-3 mt-auto pt-5 border-t border-slate-200/80 dark:border-zinc-800/50">
                     {liveUrl && (
                         <a
                             href={liveUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-cyan-500/10 text-cyan-400 rounded-lg hover:bg-cyan-500 hover:text-slate-950 transition-all shadow-lg shadow-cyan-500/5 border border-cyan-500/30 hover:border-cyan-500"
+                            className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-cyan-500/10 text-cyan-600 rounded-lg hover:bg-cyan-500 hover:text-slate-950 transition-all shadow-lg shadow-cyan-500/5 border border-cyan-500/30 hover:border-cyan-500 dark:text-cyan-400"
                         >
                             <ExternalLink size={16} /> Visit Live Site
                         </a>
@@ -45,7 +45,7 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
                             href={githubUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-zinc-800/40 text-slate-300 rounded-lg hover:bg-zinc-700 hover:text-white transition-all border border-zinc-700/50 hover:border-zinc-600"
+                            className="flex items-center gap-2 text-sm font-semibold px-4 py-2.5 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 hover:text-slate-900 transition-all border border-slate-200 hover:border-slate-300 dark:bg-zinc-800/40 dark:text-slate-300 dark:hover:bg-zinc-700 dark:hover:text-white dark:border-zinc-700/50 dark:hover:border-zinc-600"
                         >
                             <Github size={16} /> Source
                         </a>

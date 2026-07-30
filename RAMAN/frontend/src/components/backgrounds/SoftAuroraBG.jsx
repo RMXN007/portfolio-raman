@@ -2,16 +2,16 @@ import React from 'react';
 
 const SoftAuroraBackground = ({ children }) => {
     return (
-        <div className="relative w-full min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 overflow-hidden transition-colors duration-300">
+        <div className="relative w-full min-h-screen bg-bg-base text-text-primary overflow-hidden transition-colors duration-300">
             {/* Top Left Glow */}
             <div
-                className="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-cyan-400/20 dark:bg-cyan-900/30 blur-[120px] pointer-events-none select-none"
+                className="absolute -top-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-cyan-400/18 dark:bg-cyan-900/30 blur-[120px] pointer-events-none select-none"
                 aria-hidden="true"
             />
 
             {/* Bottom Right Glow */}
             <div
-                className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-violet-400/20 dark:bg-violet-900/30 blur-[120px] pointer-events-none select-none"
+                className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-violet-400/16 dark:bg-violet-900/30 blur-[120px] pointer-events-none select-none"
                 aria-hidden="true"
             />
 

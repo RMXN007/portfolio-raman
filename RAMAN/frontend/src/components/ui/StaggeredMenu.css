@@ -49,7 +49,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #e9e9ef;
+  color: #0f172a;
   font-weight: 500;
   line-height: 1;
   overflow: visible;
@@ -57,7 +57,7 @@
 }
 
 .sm-toggle:focus-visible {
-  outline: 2px solid #ffffffaa;
+  outline: 2px solid rgba(14, 165, 233, 0.55);
   outline-offset: 4px;
   border-radius: 4px;
 }
@@ -119,7 +119,7 @@
   right: 0;
   width: 100vw; /* Full screen overlay */
   height: 100vh;
-  background: rgba(6, 6, 6, 0.65); /* Increased transparency for glassy effect */
+  background: rgba(248, 250, 252, 0.88); /* Increased transparency for glassy effect */
   backdrop-filter: blur(24px); /* Heavier blur */
   -webkit-backdrop-filter: blur(24px);
   display: flex;
@@ -129,6 +129,7 @@
   z-index: 10;
   pointer-events: auto;
   border-left: none; /* No border needed for full screen */
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.16);
 }
 
 [data-position='left'] .staggered-menu-panel {
@@ -201,7 +202,7 @@
 .sm-socials-link {
   font-size: 1.4rem; /* Slightly larger text */
   font-weight: 500;
-  color: #d4d4d8;
+  color: #475569;
   text-decoration: none;
   position: relative;
   padding: 2px 0;
@@ -226,7 +227,7 @@
 
 .sm-panel-item {
   position: relative;
-  color: #fff;
+  color: #0f172a;
   font-weight: 700;
   font-size: 4rem; /* Much larger text since it's full screen */
   cursor: pointer;
@@ -240,6 +241,27 @@
   text-align: center; /* Center align text */
   background: transparent;
   border: none;
+}
+
+.dark .sm-toggle {
+  color: #e9e9ef;
+}
+
+.dark .sm-toggle:focus-visible {
+  outline: 2px solid #ffffffaa;
+}
+
+.dark .staggered-menu-panel {
+  background: rgba(6, 6, 6, 0.65);
+  box-shadow: none;
+}
+
+.dark .sm-socials-link {
+  color: #d4d4d8;
+}
+
+.dark .sm-panel-item {
+  color: #fff;
 }
 
 .sm-panel-itemLabel {

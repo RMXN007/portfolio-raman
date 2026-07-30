@@ -29,8 +29,8 @@ const Contact = () => {
     return (
         <section id="contact" ref={contactRef} className="py-24 px-4 max-w-6xl mx-auto w-full">
             <div className="text-center mb-16 contact-element">
-                <h2 className="text-3xl md:text-5xl font-bold mb-6">Let's Connect</h2>
-                <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+                <h2 className="text-3xl md:text-5xl font-bold mb-6 text-text-primary">Let's Connect</h2>
+                <p className="text-text-secondary text-lg max-w-2xl mx-auto">
                     Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
             </div>
@@ -38,33 +38,33 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Contact Info */}
                 <div className="flex flex-col justify-center space-y-8 contact-element">
-                    <a href="mailto:ramanpawar920@gmail.com" className="flex items-center gap-6 p-6 rounded-xl bg-slate-100/50 dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 hover:border-cyan-500/50 hover:bg-slate-200/80 dark:hover:bg-zinc-800/80 transition-all group">
+                    <a href="mailto:ramanpawar920@gmail.com" className="flex items-center gap-6 p-6 rounded-xl bg-white/80 dark:bg-zinc-900/50 border border-slate-200/90 dark:border-zinc-800 hover:border-cyan-500/50 hover:bg-slate-100/90 dark:hover:bg-zinc-800/80 transition-all group shadow-sm">
                         <div className="p-4 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 group-hover:scale-110 transition-transform">
                             <Mail size={28} />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold mb-1">Email</h3>
-                            <p className="text-slate-600 dark:text-zinc-400 group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">ramanpawar920@gmail.com</p>
+                            <h3 className="text-xl font-semibold mb-1 text-text-primary">Email</h3>
+                            <p className="text-text-secondary group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">ramanpawar920@gmail.com</p>
                         </div>
                     </a>
 
-                    <a href="https://linkedin.com/in/raman-pawar-824483377" target="_blank" rel="noreferrer" className="flex items-center gap-6 p-6 rounded-xl bg-slate-100/50 dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 hover:border-blue-500/50 hover:bg-slate-200/80 dark:hover:bg-zinc-800/80 transition-all group">
+                    <a href="https://linkedin.com/in/raman-pawar-824483377" target="_blank" rel="noreferrer" className="flex items-center gap-6 p-6 rounded-xl bg-white/80 dark:bg-zinc-900/50 border border-slate-200/90 dark:border-zinc-800 hover:border-blue-500/50 hover:bg-slate-100/90 dark:hover:bg-zinc-800/80 transition-all group shadow-sm">
                         <div className="p-4 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
                             <Linkedin size={28} />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold mb-1">LinkedIn</h3>
-                            <p className="text-slate-600 dark:text-zinc-400 group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">Connect with me</p>
+                            <h3 className="text-xl font-semibold mb-1 text-text-primary">LinkedIn</h3>
+                            <p className="text-text-secondary group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">Connect with me</p>
                         </div>
                     </a>
 
-                    <a href="https://github.com/RMXN007" target="_blank" rel="noreferrer" className="flex items-center gap-6 p-6 rounded-xl bg-slate-100/50 dark:bg-zinc-900/50 border border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-white/50 hover:bg-slate-200/80 dark:hover:bg-zinc-800/80 transition-all group">
+                    <a href="https://github.com/RMXN007" target="_blank" rel="noreferrer" className="flex items-center gap-6 p-6 rounded-xl bg-white/80 dark:bg-zinc-900/50 border border-slate-200/90 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-white/50 hover:bg-slate-100/90 dark:hover:bg-zinc-800/80 transition-all group shadow-sm">
                         <div className="p-4 rounded-full bg-slate-200 dark:bg-zinc-700/50 text-slate-700 dark:text-white group-hover:scale-110 transition-transform">
                             <Github size={28} />
                         </div>
                         <div>
-                            <h3 className="text-xl font-semibold mb-1">GitHub</h3>
-                            <p className="text-slate-600 dark:text-zinc-400 group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">Check out my code</p>
+                            <h3 className="text-xl font-semibold mb-1 text-text-primary">GitHub</h3>
+                            <p className="text-text-secondary group-hover:text-slate-800 dark:group-hover:text-zinc-300 transition-colors">Check out my code</p>
                         </div>
                     </a>
                 </div>

@@ -12,7 +12,7 @@ const Games = () => {
             description: 'A classic logic-based number-placement puzzle. Train your brain.',
             icon: '🧩',
             path: '/games/sudoku',
-            color: 'text-cyan-400'
+            color: 'text-cyan-500 dark:text-cyan-400'
         },
         {
             id: 'tictactoe',
@@ -20,17 +20,17 @@ const Games = () => {
             description: 'The timeless paper-and-pencil game, now digitized.',
             icon: '❌⭕',
             path: '/games/tictactoe',
-            color: 'text-blue-400'
+            color: 'text-blue-600 dark:text-blue-400'
         }
     ];
 
     return (
         <div className="py-20 px-4 md:px-8 max-w-7xl mx-auto w-full animate-fade-in">
             <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-text-primary">
                     The <span className="neon-text">Arcade</span>
                 </h1>
-                <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+                <p className="text-text-secondary text-lg max-w-2xl mx-auto">
                     Take a break from exploring and challenge yourself. Choose a game below to begin.
                 </p>
             </div>
@@ -43,7 +43,7 @@ const Games = () => {
                             <h2 className={`text-2xl font-bold ${game.color}`}>{game.name}</h2>
                         </div>
 
-                        <p className="text-zinc-400 mb-8 flex-grow">
+                        <p className="text-text-secondary mb-8 flex-grow">
                             {game.description}
                         </p>
 

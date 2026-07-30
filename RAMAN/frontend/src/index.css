@@ -2,23 +2,50 @@
 
 @theme {
   --variant-dark: (&:where(.dark, .dark *));
-  --color-brand: #3b82f6;
-  --color-accent: #06b6d4;
-  /* Dark Tech Theme */
-  --color-bg-base: #060606;
-  --color-bg-surface: #121212;
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #999999;
-  --color-accent-primary: #F59768;
-  --color-accent-secondary: #8B4513;
-
-  /* Neon cyan */
-  --color-dark-bg: #09090b;
-  --color-card-bg: rgba(24, 24, 27, 0.6);
-  --color-border: rgba(39, 39, 42, 0.8);
+  --color-brand: var(--color-brand);
+  --color-accent: var(--color-accent);
+  --color-bg-base: var(--color-bg-base);
+  --color-bg-surface: var(--color-bg-surface);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-dark-bg: var(--color-dark-bg);
+  --color-card-bg: var(--color-card-bg);
+  --color-border: var(--color-border);
   
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', serif;
+}
+
+:root {
+  color-scheme: light;
+  --color-brand: #3b82f6;
+  --color-accent: #06b6d4;
+  --color-bg-base: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-accent-primary: #0891b2;
+  --color-accent-secondary: #c2410c;
+  --color-dark-bg: #09090b;
+  --color-card-bg: rgba(255, 255, 255, 0.82);
+  --color-border: rgba(148, 163, 184, 0.32);
+}
+
+.dark {
+  color-scheme: dark;
+  --color-brand: #60a5fa;
+  --color-accent: #06b6d4;
+  --color-bg-base: #060606;
+  --color-bg-surface: #121212;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #a1a1aa;
+  --color-accent-primary: #22d3ee;
+  --color-accent-secondary: #fb923c;
+  --color-dark-bg: #09090b;
+  --color-card-bg: rgba(24, 24, 27, 0.72);
+  --color-border: rgba(63, 63, 70, 0.78);
 }
 
 @layer base {
@@ -27,13 +54,15 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-900 antialiased selection:bg-cyan-500/30 transition-colors duration-300;
+    @apply bg-bg-base text-text-primary antialiased selection:bg-accent-primary/25 transition-colors duration-300;
     font-family: 'Inter', system-ui, sans-serif;
     min-height: 100vh;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.9), rgba(241, 245, 249, 0.98));
+    background-attachment: fixed;
   }
 
   .dark body {
-    @apply bg-zinc-950 text-slate-100;
+    @apply bg-bg-base text-text-primary;
     background: radial-gradient(circle at top right, #111827, #09090b);
     background-attachment: fixed;
   }
@@ -43,11 +72,11 @@
 
   /* Glassmorphism Classes */
   .glass-card {
-    @apply bg-white/60 dark:bg-zinc-900/60 backdrop-blur-md border border-slate-200 dark:border-zinc-800/50 rounded-xl overflow-hidden transition-all duration-300 shadow-sm dark:shadow-none;
+    @apply bg-white/80 dark:bg-zinc-900/60 backdrop-blur-md border border-slate-200/80 dark:border-zinc-800/50 rounded-xl overflow-hidden transition-all duration-300 shadow-sm dark:shadow-none;
   }
 
   .glass-card:hover {
-    @apply border-cyan-500/30 bg-white/80 dark:bg-zinc-800/60 shadow-lg shadow-cyan-500/10;
+    @apply border-cyan-500/30 bg-white/95 dark:bg-zinc-800/60 shadow-lg shadow-cyan-500/10;
     transform: translateY(-4px);
   }
 

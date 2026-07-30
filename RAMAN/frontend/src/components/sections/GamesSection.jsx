@@ -29,7 +29,7 @@ const GamesSection = () => {
 
     return (
         <section ref={sectionRef} className="py-24 px-4 md:px-8 max-w-7xl mx-auto w-full">
-            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center justify-center gap-4 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-16 flex items-center justify-center gap-4 text-center text-text-primary">
                 <span className="text-cyan-500">⚡</span> Game Hub
             </h2>
 
@@ -38,8 +38,8 @@ const GamesSection = () => {
                     <div className="p-5 rounded-full bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 mb-8 border border-cyan-500/20 shadow-[0_0_20px_rgba(6,182,212,0.15)]">
                         <Gamepad2 size={48} />
                     </div>
-                    <h3 className="text-3xl font-bold mb-4">React Games Collection</h3>
-                    <p className="text-lg text-slate-600 dark:text-zinc-400 mb-8 max-w-lg">
+                    <h3 className="text-3xl font-bold mb-4 text-text-primary">React Games Collection</h3>
+                    <p className="text-lg text-text-secondary mb-8 max-w-lg">
                         Challenge yourself with classic games built entirely as modular React components. Test your logic with Sudoku or play a quick match of Tic Tac Toe.
                     </p>
                     <Link to="/games" className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-white dark:text-zinc-950 bg-cyan-500 hover:bg-cyan-400 transition-all shadow-[0_0_15px_rgba(6,182,212,0.4)] hover:scale-105">
