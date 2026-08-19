@@ -3,6 +3,7 @@ import ProjectCard from '../components/projects/ProjectCard';
 
 import portfolioImg from '../assets/images/portfolio.png';
 import gamevaultImg from '../assets/images/GameVault.png';
+import ietresultImg from '../assets/images/ietresult.png';
 
 const projectsList = [
     {
@@ -27,7 +28,7 @@ const projectsList = [
         id: 3,
         title: "IET DAVV RESULT PORTAL",
         description: "A web application for managing and displaying academic results for students of IET DAVV.",
-        image: "https://ietresult.vercel.app/",
+        image: ietresultImg,
         techStack: ["React", "TailwindCSS", "Recharts"],
         liveUrl: "https://ietresult.vercel.app/",
         githubUrl: "https://github.com/RMXN007/ietresult"
