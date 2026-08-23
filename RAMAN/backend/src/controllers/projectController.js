@@ -12,14 +12,14 @@ export const getProjects = (req, res) => {
             title: 'E-commerce Dashboard',
             description: 'Analytics and management dashboard for small businesses.',
             image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600',
-            link: '#'
+            link: 'https://gamevault-pink-three.vercel.app/'
         },
         {
             id: 3,
             title: 'Social Media Clone',
             description: 'Full-stack social application with real-time features.',
             image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=600',
-            link: '#'
+            link: 'https://ietresult.vercel.app/'
         }
     ];
 

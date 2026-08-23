@@ -37,6 +37,7 @@ const projectsList = [
 
 const Projects = () => {
     return (
+        console.log("Projects data:", projectsList),
         <div className="py-24 px-4 md:px-8 max-w-7xl mx-auto w-full animate-fade-in mt-16">
             <div className="mb-16 text-center max-w-3xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-text-primary">

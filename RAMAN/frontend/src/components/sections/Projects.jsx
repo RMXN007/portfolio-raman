@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectCard from '../projects/ProjectCard';
-
+import ietresultImg from '../../assets/images/ietresult.png';
 import portfolioImg from '../../assets/images/portfolio.png';
 import gamevaultImg from '../../assets/images/GameVault.png';
 
@@ -29,12 +29,12 @@ const projectsData = [
     },
     {
         id: 3,
-        title: "E-Commerce Dashboard",
-        description: "An admin dashboard for managing products, viewing sales metrics, and handling customer orders.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-        techStack: ["React", "TailwindCSS", "Recharts"],
-        liveUrl: "#",
-        githubUrl: "#"
+                title: "IET DAVV RESULT PORTAL",
+                description: "A web application for managing and displaying academic results for students of IET DAVV.",
+                image: ietresultImg,
+                techStack: ["React", "TailwindCSS", "Recharts"],
+                liveUrl: "https://ietresult.vercel.app/",
+                githubUrl: "https://github.com/RMXN007/ietresult"
     }
 ];
 
